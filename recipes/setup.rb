@@ -59,7 +59,7 @@ execute "deploy" do
   only_if do ::File.exists?("#{node.site.root_path}/deploy.sh") end
 end
 
-execute "create database #{node.site.database_name}" do
-    command "mysql -u#{node.site.database_username} -p#{node.site.database_password} -e 'CREATE DATABASE IF NOT EXISTS `#{node.site.database_name}`'"
-    user "vagrant"
-end
+#execute "create database #{node.site.database_name}" do
+#    command "mysql -u#{node.site.database_username} -p#{node.site.database_password} -e 'CREATE DATABASE IF NOT EXISTS `#{node.site.database_name}`'"
+#    user "vagrant"
+#end
