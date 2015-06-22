@@ -9,6 +9,7 @@ default['site']['database_password'] = '0000'
 
 override['user']['name'] = 'vagrant'
 override['nginx']['pid'] = '/run/nginx.pid'
+override['mysql']['port'] = '3306'
 override['mysql']['server_root_password'] = '0000'
 override['mysql']['server_repl_password'] = '0000'
 override['mysql']['server_debian_password'] = '0000'
